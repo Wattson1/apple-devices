@@ -1,0 +1,130 @@
+:root{
+  --page-bg: #f4f6fb;
+  --card-bg: #ffffff;
+  --ink: #101828;
+  --muted: #667085;
+  --accent: #111827;
+  --soft: #eef2ff;
+}
+
+body{
+  background:
+    radial-gradient(circle at top left, rgba(229, 231, 235, 0.8), transparent 32%),
+    linear-gradient(180deg, #fafbff 0%, var(--page-bg) 100%);
+  color: var(--ink);
+}
+
+.navbar{
+  --bs-navbar-padding-y: 0.85rem;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+}
+
+.nav-link{
+  font-weight: 500;
+}
+
+.hero-section{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-card{
+  background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+  border-radius: 1.5rem;
+}
+
+.feature-box{
+  border: 1px solid rgba(17,24,39,.08);
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+.catalog-card{
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+  background: var(--card-bg);
+}
+
+.catalog-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(16,24,40,.12);
+}
+
+.card-img-wrap{
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-bottom: 1px solid rgba(17,24,39,.06);
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.product-thumb{
+  width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+}
+
+.product-page-image{
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.price-pill{
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: .4rem .8rem;
+  background: #111827;
+  color: #fff;
+  font-weight: 600;
+  font-size: .95rem;
+}
+
+.catalog-tools{
+  width: min(100%, 260px);
+}
+
+.cart-card{
+  position: sticky;
+  top: 5.5rem;
+  border-radius: 1.25rem;
+}
+
+.cart-list{
+  display: grid;
+  gap: .75rem;
+}
+
+.cart-item{
+  border: 1px solid rgba(17,24,39,.08);
+  border-radius: 1rem;
+  padding: .9rem;
+  background: #fff;
+}
+
+.cart-empty{
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #f8fafc;
+  color: var(--muted);
+  border: 1px dashed rgba(17,24,39,.14);
+}
+
+.breadcrumb a{
+  text-decoration: none;
+}
+
+footer{
+  background: rgba(255,255,255,.8);
+}
+
+@media (max-width: 991.98px){
+  .cart-card{
+    position: static;
+  }
+}
