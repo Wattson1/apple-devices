@@ -1,5 +1,7 @@
 const productsCatalog = [
   {
+// ПР-4: сохранение и загрузка корзины пользователя через LocalStorage
+
     id: "iphone17",
     title: "iPhone 17",
     price: 109990,
